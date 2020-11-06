@@ -31,31 +31,31 @@
 @white: #fff;
 @rightGrey: #555;
 @greyRight2: #aaa;
-@red: #f42;
+@red: #ff4422;
 @blackRight: #131313;
 
 // mixin
 .font(@size @family) {
-	font-size: @size;
-	font-family: @family;
+  font-size: @size;
+  font-family: @family;
 }
 // mixin for all display properties
 .display(@display) {
-	display: @display;
+  display: @display;
 }
 // mixin for all width & height
 .mesurement(@width @height) {
-	width: @width;
-	height: @height;
-} 
+  width: @width;
+  height: @height;
+}
 
 a {
   text-decoration: none;
 }
 
 header > nav > a {
-	background-color: @black;
-	.mesurement(106 48);
+  background-color: @black;
+  .mesurement(106 48);
 }
 
 section h2 > a {
@@ -64,8 +64,8 @@ section h2 > a {
 
 section h2 > a::after,
 section h2 > a {
-	color: rgb(255, 68, 34);
-	.font(28px avalon, Arial, Helvetica, sans-serif);
+  color: rgb(255, 68, 34);
+  .font(28px avalon, Arial, Helvetica, sans-serif);
 }
 
 .investment-icon > a {
@@ -78,6 +78,7 @@ section h2 > a {
   color: @greyRight2;
   .font(14px shentox, Arial, Helvetica, sans-serif);
   .display(flex);
+
   align-items: center;
 }
 
@@ -113,7 +114,8 @@ section h2 > a:hover {
 
 .nav-top > .col-1 li > a,
 .nav-top > .col-2 li > a {
-	.display(flex);
+  .display(flex);
+
   align-items: center;
   color: @greyRight2;
   font-size: 13px;
@@ -177,16 +179,18 @@ header > nav > a > img {
 }
 
 .footer-icon > div:first-child > img {
-	.mesurement(30px 30px);
+  .mesurement(30px 30px);
+
   margin: 7.5px;
 }
 
 .section-4 figure.row-reverse img {
-	.mesurement(96px 96px);
+  .mesurement(96px 96px);
 }
 
 .section-3 .grid-3 header > img {
-	.mesurement(60px 60px);
+  .mesurement(60px 60px);
+
   position: absolute;
   top: 0;
   left: 0;
@@ -204,12 +208,14 @@ header > nav > a > img {
 }
 
 .section-1 figure > figcaption .row:last-child > img {
-	.mesurement(15px 15px);
+  .mesurement(15px 15px);
+
   margin-left: 10px;
 }
 
 .section-1 figure > figcaption .row:last-child a img {
-	.mesurement(10px 10px);
+  .mesurement(10px 10px);
+
   margin: 0 10px;
 }
 
@@ -243,7 +249,8 @@ body {
 }
 
 .nav-top {
-	.mesurement(100% 32px);
+  .mesurement(100% 32px);
+
   background-color: #131313;
   padding: 0 25px;
 }
@@ -251,7 +258,8 @@ body {
 .nav-bottom li,
 .nav-top > .col-1 li,
 .nav-top > .col-2 li {
-	.display(flex);
+  .display(flex);
+
   list-style: none;
   margin: 0 5px;
   height: 100%;
@@ -289,7 +297,8 @@ nav {
 .section-4 .row-1 figure > figcaption {
   position: absolute;
   top: 0;
-	.mesurement(100% 100%);
+  .mesurement(100% 100%);
+
   color: @white;
   background-image: linear-gradient(transparent, #000);
   padding: 10px;
@@ -348,6 +357,7 @@ section figcaption h3 {
 
 .section-3 .grid-3 header > h5 {
   .font(11px shentoxm Arial, Helvetica, sans-serif);
+
   padding-bottom: 10px;
   opacity: 0.5;
 }
@@ -480,6 +490,7 @@ main {
 
 .section-4 > article:last-child figcaption h4 {
   .font(13px shentox, Arial, Helvetica, sans-serif);
+
   font-weight: 500;
 }
 
@@ -561,7 +572,8 @@ main {
   .section-5 figure img,
   .section-2 figure img {
     margin: 0 10px;
-		.mesurement(100px 100px);
+    .mesurement(100px 100px);
+
     object-fit: cover;
   }
 
@@ -699,7 +711,8 @@ main {
 
   .section-2 figure > img,
   .section-5 figure > img {
-		.mesurement(100% 70%);
+    .mesurement(100% 70%);
+
     margin-bottom: 10px;
   }
 
@@ -709,13 +722,14 @@ main {
 
   .footer-address {
     .display(flex);
+
     flex-direction: row;
     align-items: center;
     font-size: 18px;
   }
+
   .space-around {
     gap: 10px;
     font-size: 20px;
   }
 }
-	
